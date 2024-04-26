@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Store</title>
+  <style>
+    /* CSS Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #f2f2f2;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      padding: 10px;
+      margin: 5px;
+    }
+
+    nav a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .product {
+      display: inline-block;
+      width: 300px;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .product img {
+      width: 200px;
+      height: 200px;
+    }
+
+    .product h3 {
+      margin-top: 10px;
+    }
+
+    .product button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gaming Store</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Games</a>
+    <a href="#">Consoles</a>
+    <a href="#">Accessories</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="product-list">
+    <div class="product">
+      <img src="game1.jpg" alt="Game 1">
+      <h3>Game 1</h3>
+      <p>$49.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="game2.jpg" alt="Game 2">
+      <h3>Game 2</h3>
+      <p>$59.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="console.jpg" alt="Console">
+      <h3>Gaming Console</h3>
+      <p>$399.99</p>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript code
+    const addToCartButtons = document.querySelectorAll('.product button');
+
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        alert('Item added to cart!');
+      });
+    });
+  </script>
+</body>
+</html>
